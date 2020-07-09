@@ -1,0 +1,51 @@
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  list-style-type: none
+
+  &-item
+    display: block
+    padding: 5px 20px
+
+
+.link
+  text-decoration: none
+  font-size: 16px
+  color: $darken-gray
+
+  &_bold
+    font-weight: 500
+
+.btn
+  padding: 13px 45px
+  border-radius: 50px
+  font-size: 16px
+  font-weight: 500
+  cursor: pointer
+  outline: none
+
+  &_outline
+    color: $red
+    border: 1px solid $red
+
+    &:hover
+      color: $white
+      background-color: $red
+      transition: .2s
+
+  &_painted
+    color: $white
+    border: 1px solid $red
+    background-color: $red
+
+    &:hover
+      box-shadow: 0px 15px 15px -5px transparentize($red, .65)
+      transition: .2s
+
+  &_large
+    padding: 17px 65px
+    border-radius: 10px
+
+  &_small
+    padding: 15px

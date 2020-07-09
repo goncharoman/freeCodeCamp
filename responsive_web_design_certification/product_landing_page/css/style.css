@@ -1,11 +1,16 @@
-.hero {
-  padding: 30px 0px;
-  height: 1005px;
-  background: url("/img/hero-bg.png") no-repeat;
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
-.hero-header {
-  padding: 0px 10px;
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,31 +20,72 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style-type: none;
 }
 
-.hero-content__title {
-  margin-top: 90px;
-  font-family: "DM Serif Display", sans-serif;
-  font-size: 100px;
-  line-height: 98px;
-  color: #ffffff;
+.nav-item {
+  display: block;
+  padding: 5px 20px;
 }
 
-.hero-content__btn {
-  margin-top: 60px;
-  padding: 20px 25px;
-  border: none;
-  border-radius: 5px;
-  background-color: #EE4D47;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
+.link {
+  text-decoration: none;
   font-size: 16px;
+  color: #4F5665;
+}
+
+.link_bold {
+  font-weight: 500;
+}
+
+.btn {
+  padding: 13px 45px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
   outline: none;
 }
 
-.header-nav {
+.btn_outline {
+  color: #F53838;
+  border: 1px solid #F53838;
+}
+
+.btn_outline:hover {
+  color: #ffffff;
+  background-color: #F53838;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn_painted {
+  color: #ffffff;
+  border: 1px solid #F53838;
+  background-color: #F53838;
+}
+
+.btn_painted:hover {
+  -webkit-box-shadow: 0px 15px 15px -5px rgba(245, 56, 56, 0.35);
+          box-shadow: 0px 15px 15px -5px rgba(245, 56, 56, 0.35);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn_large {
+  padding: 17px 65px;
+  border-radius: 10px;
+}
+
+.btn_small {
+  padding: 15px;
+}
+
+.header {
+  padding: 45px 0px;
+}
+
+.header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,64 +97,68 @@
           align-items: center;
 }
 
-.header-nav__item {
-  position: relative;
-  display: block;
-  height: 100%;
-  margin-right: 80px;
-  max-width: 158px;
-  font-family: "Rubik", sans-serif;
+.header-logo img {
+  max-width: 100%;
+}
+
+.header-auth__item {
+  margin-right: 30px;
+}
+
+.header-auth__item:last-child {
+  margin-right: 0px;
+}
+
+.hero {
+  padding: 75px 0px;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-offer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.hero-offer__title {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.hero-offer__title strong {
   font-weight: bold;
+}
+
+.hero-offer__desc {
+  margin-bottom: 50px;
   font-size: 16px;
-  color: #ffffff;
-  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-.header-nav__item::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -2px;
-  height: 3px;
-  width: 0%;
-  background-color: #ffffff;
+.hero-pic {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header-nav__item:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.header-nav__item:hover::after {
-  width: 100%;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.header-nav__item:last-child {
-  margin-right: 0;
-  padding: 20px 24px;
-  background-color: #EE4D47;
-  border-radius: 5px;
-}
-
-.header-nav__item:last-child::after {
-  display: none;
-}
-
-.header-nav__item:last-child:hover {
-  -webkit-box-shadow: 0px 30px 40px rgba(244, 125, 103, 0.2);
-          box-shadow: 0px 30px 40px rgba(244, 125, 103, 0.2);
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.header-logo__img {
-  width: 100%;
-}
-
-body {
-  background-color: #FEF8F5;
+.hero-pic__img {
+  max-width: 100%;
 }

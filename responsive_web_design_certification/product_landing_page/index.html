@@ -3,28 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product landing page</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@800&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <title>LaslesVPN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div class="hero">
+  <header class="header">
     <div class="container">
-      <div class="hero-header">
-        <div class="hero-header__logo header-logo">
-          <img src="img/logo.png" alt="TRAFICO logo" class="header-logo__img">
+      <div class="header-content">
+        <div class="headed-logo">
+          <img src="/img/logo.svg" alt="LaslesVPN">
         </div>
-        <div class="hero-header__btns header-nav">
-          <a href="#" class="header-nav__item">about</a>
-          <a href="#" class="header-nav__item">how to</a>
-          <a href="#" class="header-nav__item">faqs</a>
-          <a href="#" class="header-nav__item">contact us</a>
+        <nav class="header-nav">
+          <ul class="nav nav_horizontal">
+            <li class="nav-item"><a href="#" class="link">About</a></li>
+            <li class="nav-item"><a href="#" class="link">Features</a></li>
+            <li class="nav-item"><a href="#" class="link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="link">Testimonials</a></li>
+            <li class="nav-item"><a href="#" class="link">Help</a></li>
+          </ul>
+        </nav>
+        <div class="header-auth">
+          <a href="#" class="header-auth__item link link_bold">Sing In</a>
+          <button class="header-auth__item btn btn_outline">Sing Up</button>
         </div>
       </div>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="container">
       <div class="hero-content">
-        <h1 class="hero-content__title">Your awesome <br>traffic permit <br>consultant.</h1>
-        <button class="hero-content__btn">get started</button>
+        <div class="hero-offer">
+          <h1 class="hero-offer__title">Want anything to be easy with <strong>LaslesVPN.</strong></h1>
+          <p class="hero-offer__desc">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong> discover interesting features from us.</p>
+          <button class="hero-offer__btn btn btn_painted btn_large">Get Started</button>
+        </div>
+        <div class="hero-pic">
+          <div class="hero-pic__wrapper">
+            <img src="/img/hero-img.svg" alt="" class="hero-pic__img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stat">
+    <div class="container">
+      <div class="stat-content">
+        <div class="stat-item ">
+          <div class="stat-item__icon"></div>
+          <div class="stat-item__info">
+          </div>
+        </div>
+        <div class="stat-item"></div>
+        <div class="stat-item"></div>
       </div>
     </div>
   </div>
