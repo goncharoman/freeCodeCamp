@@ -221,6 +221,7 @@
   font-size: 50px;
   font-weight: 500;
   line-height: 70px;
+  color: #0B132A;
 }
 
 @media (max-width: 1024px) {
@@ -253,6 +254,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  color: #4F5665;
 }
 
 @media (max-width: 1024px) {
@@ -524,4 +526,267 @@
     font-size: 12px;
     line-height: 16px;
   }
+}
+
+.features {
+  padding: 50px 0px;
+}
+
+.features-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-picture {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-picture img {
+  max-width: 100%;
+}
+
+.features-info {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 100px;
+  padding-right: 60px;
+}
+
+.features-info__title {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #0B132A;
+}
+
+.features-info__desc {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #4F5665;
+  margin-bottom: 20px;
+}
+
+.features-info-list {
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  list-style-type: none;
+}
+
+.features-info-list__item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.features-info-list__item::before {
+  content: url("/img/check-painted.svg");
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.video {
+  padding: 50px 0px;
+}
+
+.video-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 30px;
+  color: #0B132A;
+}
+
+.video-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__player {
+  width: 720px;
+  outline: none;
+}
+
+.plans {
+  padding: 80px 0px;
+  background-color: #fbfbfb;
+}
+
+.plans__title {
+  font-size: 35px;
+  font-weight: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0B132A;
+}
+
+.plans__desc {
+  font-size: 16px;
+  font-weight: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #4F5665;
+}
+
+.plans-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans-cards__item {
+  height: 760px;
+}
+
+.plan-card {
+  padding: 80px 70px 50px 70px;
+  position: relative;
+  border: 2px solid #e9e9e9;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-card:hover {
+  border: 2px solid #F53838;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.plan-card__pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.plan-card__pic img {
+  width: 100%;
+}
+
+.plan-card__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #0B132A;
+  margin-bottom: 30px;
+}
+
+.plan-card-list {
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.plan-card-list__item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.plan-card-list__item::before {
+  position: absolute;
+  content: url("/img/check.svg");
+  width: 24px;
+  height: 24px;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.plan-card__footer {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-card__price {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.plan-card__btn {
+  padding: 13px 62px;
 }

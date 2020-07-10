@@ -1,0 +1,54 @@
+.features
+  padding: 50px 0px
+
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &-picture
+    flex-basis: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+      max-width: 100%
+
+  &-info
+    flex-basis: 50%
+    padding-left: 100px
+    padding-right: 60px
+
+    &__title
+      font-size: 35px
+      line-height: 50px
+      font-weight: 500
+      margin-bottom: 20px
+      color: $black
+
+    &__desc
+      font-size: 16px
+      line-height: 30px
+      font-weight: 400
+      color: $darken-gray
+      margin-bottom: 20px
+
+    &-list
+      font-size: 14px
+      line-height: 30px
+      color: $darken-gray
+      list-style-type: none
+
+      &__item
+        position: relative
+        margin-bottom: 15px
+
+        &::before
+          content: url("/img/check-painted.svg")
+          position: absolute
+          width: 24px
+          height: 24px
+          top: 50%
+          left: -40px
+          transform: translateY(-50%)
