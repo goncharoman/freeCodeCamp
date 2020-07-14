@@ -1,6 +1,12 @@
 .video
   padding: 50px 0px
 
+  @media (max-width: 1024px)
+    padding: 30px 0px
+
+  @media (max-width: 768px)
+    padding: 25px 0px
+
   &-content
     display: flex
     flex-direction: column
@@ -13,6 +19,15 @@
     margin-bottom: 30px
     color: $black
 
+    @media (max-width: 1024px)
+      font-size: 30px
+      line-height: 30px
+      margin-bottom: 15px
+
+    @media (max-width: 768px)
+      font-size: 25px
+      line-height: 35px
+
   &-wrapper
     display: flex
     justify-content: center
@@ -21,4 +36,7 @@
   &__player
     width: 720px
     outline: none
+
+    @media (max-width: 768px)
+      width: 480px
 
