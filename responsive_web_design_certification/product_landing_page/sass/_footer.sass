@@ -1,0 +1,114 @@
+.footer
+  position: relative
+  padding: 130px 0px 100px 0px
+  background-color: $lighten-gray
+
+  &-form
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 80%
+    padding: 60px 70px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $white
+    border-radius: 10px
+    box-shadow: 0px 10px 10px -5px transparentize(#0D1025, .9)
+
+    &__info
+      flex-basis: 70%
+
+    &__title
+      width: 50%
+      margin-bottom: 20px
+      font-size: 35px
+      font-weight: 500
+      line-height: 45px
+      color: $black
+
+    &__desc
+      width: 50%
+      font-size: 16px
+      line-height: 30px
+      color: $darken-gray
+      margin-bottom: 30px
+
+    &__email
+      width: 60%
+      padding: 7px 10px
+      font-size: 14px
+      border-radius: 5px
+      border: 2px solid darken($lighten-gray, 6)
+
+    &__btn
+      font-size: 16px
+      padding: 17px 65px
+      border-radius: 10px
+
+  &-content
+    padding-top: 90px
+    display: flex
+    justify-content: space-between
+
+  &-info
+    flex-basis: 40%
+
+    &__logo
+      margin-bottom: 20px
+      img
+        max-width: 100%
+
+    &__desc
+      width: 70%
+      margin-bottom: 20px
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      color: $darken-gray
+
+    &__accounts
+      padding: 10px 0px
+      margin-bottom: 20px
+
+    &__copyright
+      font-size: 16px
+      line-height: 30px
+      color: #AFB5C0
+
+  &-links
+    flex-basis: 50%
+    display: flex
+    justify-content: space-between
+
+    &__title
+      font-size: 18px
+      font-weight: 500
+      line-height: 30px
+      margin-bottom: 20px
+
+
+.accounts
+  display: flex
+  justify-items: center
+  list-style-type: none
+
+  &__item
+    width: 35px
+    height: 35px
+    margin-right: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-color: $white
+
+    &:hover
+      box-shadow: 0px 10px 10px darken($lighten-gray, 8)
+
+    svg
+      width: 50%
+      height: 50%
+      fill: $red
+
