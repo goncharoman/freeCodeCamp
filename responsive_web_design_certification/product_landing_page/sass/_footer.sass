@@ -3,6 +3,9 @@
   padding: 130px 0px 100px 0px
   background-color: $lighten-gray
 
+  @media (max-width: 1024px)
+    padding: 100px 0px 80px 0px
+
   &-form
     position: absolute
     top: 0
@@ -17,8 +20,23 @@
     border-radius: 10px
     box-shadow: 0px 10px 10px -5px transparentize(#0D1025, .9)
 
+    @media (max-width: 1024px)
+      padding: 30px 40px
+
+    @media (max-width: 768px)
+      padding: 20px 30px
+
+    @media (max-width: 658px)
+      flex-direction: column
+
     &__info
       flex-basis: 70%
+
+      @media (max-width: 1024px)
+        flex-basis: 60%
+
+      @media (max-width: 658px)
+        flex-basis: 100%
 
     &__title
       width: 50%
@@ -28,12 +46,39 @@
       line-height: 45px
       color: $black
 
+      @media (max-width: 1024px)
+        width: 80%
+        font-size: 30px
+        line-height: 35px
+        margin-bottom: 15px
+
+      @media (max-width: 768px)
+        width: 90%
+        font-size: 25px
+        line-height: 30px
+
+      @media (max-width: 658px)
+        width: 100%
+        text-align: center
+
     &__desc
       width: 50%
       font-size: 16px
       line-height: 30px
       color: $darken-gray
       margin-bottom: 30px
+
+      @media (max-width: 1024px)
+        width: 70%
+        font-size: 14px
+        line-height: 20px
+
+      @media (max-width: 768px)
+        width: 90%
+
+      @media (max-width: 658px)
+        width: 100%
+        text-align: center
 
     &__email
       width: 60%
@@ -42,23 +87,48 @@
       border-radius: 5px
       border: 2px solid darken($lighten-gray, 6)
 
+      @media (max-width: 658px)
+        display: block
+        width: 80%
+        margin: auto
+        margin-bottom: 30px
+
     &__btn
       font-size: 16px
       padding: 17px 65px
       border-radius: 10px
+
+      @media (max-width: 768px)
+        font-size: 14px
+        padding: 14px 50px
 
   &-content
     padding-top: 90px
     display: flex
     justify-content: space-between
 
+    @media (max-width: 1024px)
+      padding-top: 60px
+
+    @media (max-width: 658px)
+      padding-top: 80px
+
   &-info
     flex-basis: 40%
 
+    @media (max-width: 658px)
+      flex-basis: 100%
+
     &__logo
+      display: flex
+      align-items: center
       margin-bottom: 20px
       img
-        max-width: 100%
+        display: block
+
+      @media (max-width: 1024px)
+        img
+          width: 40%
 
     &__desc
       width: 70%
@@ -67,6 +137,10 @@
       font-weight: 400
       line-height: 30px
       color: $darken-gray
+
+      @media (max-width: 1024px)
+        font-size: 14px
+        line-height: 20px
 
     &__accounts
       padding: 10px 0px
@@ -77,10 +151,28 @@
       line-height: 30px
       color: #AFB5C0
 
+      @media (max-width: 1024px)
+        font-size: 14px
+        line-height: 20px
+
   &-links
     flex-basis: 50%
     display: flex
     justify-content: space-between
+
+    @media (max-width: 1024px)
+      flex-basis: 60%
+      &__nav
+        font-size: 14px
+        line-height: 16px
+
+    @media (max-width: 768px)
+      &__nav
+        font-size: 12px
+        line-height: 16px
+
+    @media (max-width: 658px)
+      display: none
 
     &__title
       font-size: 18px
@@ -88,6 +180,14 @@
       line-height: 30px
       margin-bottom: 20px
 
+      @media (max-width: 1024px)
+        font-size: 16px
+        line-height: 24px
+
+      @media (max-width: 768px)
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 10px
 
 .accounts
   display: flex
