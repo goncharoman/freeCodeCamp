@@ -1,0 +1,63 @@
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  list-style-type: none
+  padding: 0
+
+  &-item
+    display: block
+
+.nav_horizontal
+  flex-direction: rows
+
+  li
+    margin-right: 7px
+
+    &:last-child
+      margin-right: 0
+
+.nav_vertical
+  flex-direction: column
+  align-items: flex-start
+
+  li
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
+
+.link
+  text-decoration: none
+  color: $darken-gray
+
+  &_bold
+    font-weight: 500
+
+.btn
+  border-radius: 50px
+  font-weight: 500
+  cursor: pointer
+  outline: none
+  background-color: $white
+
+  &_outline
+    color: $red
+    border: 1px solid $red
+
+    &:hover
+      color: $white
+      background-color: $red
+      transition: .2s
+
+  &_painted
+    color: $white
+    border: 1px solid $red
+    background-color: $red
+
+    &:hover
+      box-shadow: 0px 15px 15px -5px transparentize($red, .65)
+      transition: .2s
+
+  &_small
+    padding: 15px
